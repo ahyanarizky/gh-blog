@@ -40,3 +40,5 @@ Thumbs.db
 #   path = "hugo.local.toml"
 hugo.local.toml
 config.local.toml
+.hugo_build.lock
+*:Zone.Identifier

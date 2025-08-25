@@ -1,3 +1,24 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ahyana.dev/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Ahyana Blogs'
+theme = 'github-style'
+
+[params]
+author = "Ahyana Rizky Pratama"
+description = "Full-stack developer and former Tech Lead living in Melbourne. I enjoy building high-impact applications with React, Node.js, TypeScript, and AWS. Currently exploring new opportunities to build meaningful products with a great team. Let's connect!"
+github = "ahyanarizky"
+facebook = "ahyanarizky"
+twitter = "ahyanarizky"
+linkedin = "ahyanarizky"
+instagram = "ahyanarizky"
+email = "ahyana.rizky@gmail.com"
+url = "https://ahyana.dev/"
+keywords = "blog, google analytics"
+rss = true
+lastmod = true
+favicon = "/images/github-mark.png"
+avatar = "/images/profile_picture.webp"
+headerIcon = "/images/github-mark.png"
+location = "Melbourne, Australia"
+userStatusEmoji = "🚀"
+enableSearch = true
