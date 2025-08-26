@@ -1,6 +1,6 @@
-baseURL = 'https://ahyana.dev/'
+baseURL = 'https://ahyana.dev'
 languageCode = 'en-us'
-title = 'Ahyana Blogs'
+title = "Ahyana's Dev Journal"
 theme = 'github-style'
 
 [params]
@@ -22,3 +22,29 @@ headerIcon = "/images/github-mark.png"
 location = "Melbourne, Australia"
 userStatusEmoji = "🚀"
 enableSearch = true
+
+# --- Hugo Deployment Configuration ---
+# This section configures the `hugo deploy` command to push your site to AWS S3.
+# Your AWS credentials must be configured locally for this to work.
+[[deployment.targets]]
+  # A unique name for this deployment target (e.g., "production").
+  name = "production"
+  
+  # The S3 bucket URL. The bucket name MUST match your domain name.
+  # The region should match the one you used in your Terraform setup.
+  URL = "s3://ahyana.dev?region=ap-southeast-3"
+
+# --- Cache Control Headers ---
+# These rules tell browsers how to cache your files, improving performance.
+[[deployment.matchers]]
+  # Never cache HTML, XML, or JSON files so changes appear immediately.
+  pattern = "^.+\\.(html|xml|json)$"
+  cacheControl = "max-age=0, no-cache, no-store, must-revalidate"
+  contentType = "text/html"
+
+[[deployment.matchers]]
+  # Cache assets like CSS, JS, and images for one year.
+  pattern = "^.+\\.(js|css|png|jpg|gif|svg|woff|woff2|ttf|eot)$"
+  cacheControl = "max-age=31536000, public"
+  # Enable Gzip compression for text-based assets.
+  gzip = true
