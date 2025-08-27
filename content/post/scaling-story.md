@@ -6,9 +6,7 @@ description: "A war story about evolving a monolithic architecture to an event-d
 tags: ["Architecture", "Ruby on Rails", "Microservices", "Kafka", "Scalability"]
 ---
 
-### From Background Jobs to an Event-Driven Microservice (A Learning Journey)
-
-Every successful SaaS platform eventually faces the same “good problem to have”: your application is so popular that its own growth becomes the biggest threat to its stability. This is the story of how our team at Jurnal (Mekari) tackled a major performance bottleneck in our core Ruby on Rails monolith, and how we evolved our architecture iteratively to support our rapidly growing user base.
+Every successful SaaS platform eventually faces the same “good problem to have”: your application is so popular that its own growth becomes the biggest threat to its stability. This is the story of how our team at Jurnal (Mekari) tackled a major performance bottleneck in our core Ruby on Rails monolith, and how we evolved our architecture iteratively to support our rapidly growing user base.<!--more-->
 
 ### The Scene: A Successful Monolith
 
